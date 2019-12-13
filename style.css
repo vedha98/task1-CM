@@ -9,3 +9,8 @@ background-color: white;
 font-family: 'Source Sans Pro', sans-serif;
 display: flex;
 }
+.logo-float{
+    display: inline-block;
+    margin-top: 24px;
+    padding-left: 40px;
+}
