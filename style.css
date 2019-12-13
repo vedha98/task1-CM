@@ -7,10 +7,91 @@ body{
 height: 90px;
 background-color: white;
 font-family: 'Source Sans Pro', sans-serif;
-display: flex;
+max-width: 1300px;
+min-width: 1300px;
+margin-left: 15%;
+z-index: 99;
+}
+text{
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .logo-float{
     display: inline-block;
     margin-top: 24px;
-    padding-left: 40px;
+   
+    left: 0px;
 }
+.categories-text{
+    height: 40px;
+}
+#guest{
+    float: right;
+}
+navi{
+    display: inline-block;
+    padding: 0px 16px;
+    color: #2c4152;
+    font-size: 14px;
+    
+}
+.categories{
+    text-align: right;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: 30px;
+    
+}
+.searchbar{
+    display: inline-block;
+    width:300px;
+    
+}
+.navWrapper{
+    display: block;  
+    align-content: center;
+    width: 100%;
+    background-color: white;
+}
+#searchinput{
+    border-style: solid;
+    border-radius: 17px;
+    border-width: 1px;
+    height: 34px;
+    width: 100%;
+    
+    
+}
+.banner1{
+  background-color: black;
+  overflow: hidden;
+  min-width: 500px;
+}
+.scaleable:hover{
+transform: scale(1.008);
+transition: 1s;
+z-index: 2;
+}
+.scaleable{
+    transition: 1s;
+    width: 100%
+    
+}
+#mobilenav{
+    height: 90px;
+    background-color: white;
+    display: none;
+    min-width: 500px;
+}
+@media only screen and (max-width: 1200px)   {
+#navbar{
+    display: none;
+}
+#mobilenav{
+    display: block;
+}
+
+    }
+@media only screen and (min-width: 1920px) {
+
+    
+    }
