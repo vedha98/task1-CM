@@ -21,12 +21,16 @@ text{
 }
 .logo-float{
     display: inline-block;
-    margin-top: 24px;
-   
+    margin-top: 24px; 
     left: 0px;
 }
 .categories-text{
     height: 40px;
+    cursor: pointer;
+   
+}
+.categories-text:hover{
+    font-weight: 200;
 }
 #guest{
     float: right;
@@ -37,6 +41,12 @@ navi{
     color: #2c4152;
     font-size: 14px;
     
+}
+#hamic{
+    width:100%;
+    transform: scale(0.3);
+    margin-top: 10px;
+    display: block;
 }
 .categories{
     text-align: right;
@@ -72,6 +82,10 @@ navi{
   
   
 }
+.banner2{
+    overflow: hidden;
+    width: 50%;
+}
 .scaleable:hover{
 transform: scale(1.015);
 transition: 1s;
@@ -97,10 +111,11 @@ transition: left .4s cubic-bezier(.47,.13,.15,.89);
     align-content: center;
 }
 #mobilenav{
-    height: 10vw;
+   
     background-color: white;
     display: none;
     min-width: 500px;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1200px)   {
@@ -115,7 +130,63 @@ transition: left .4s cubic-bezier(.47,.13,.15,.89);
 
     display: block;
 }
+menu{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    
+}
+* {box-sizing:border-box}
 
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.dots{
+    
+    width: 10%;
+    
+
+}
+h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 5%;
+}
+@media only screen and (max-width:500px){
+#hamic{
+    transform: scale(0.3);
+}
+}
     }
     @media only screen and (max-width:1000px){
         .gallery_image{
