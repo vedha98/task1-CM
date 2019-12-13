@@ -1,5 +1,5 @@
 body{
-    background-color: bisque;
+    background-color: white;
     padding: 0%;
     margin: 0%;
 }
@@ -9,11 +9,15 @@ background-color: white;
 font-family: 'Source Sans Pro', sans-serif;
 max-width: 1300px;
 min-width: 1300px;
-margin-left: 15%;
+margin-left: 40px;
 z-index: 99;
 }
 text{
     font-family: 'Source Sans Pro', sans-serif;
+}
+.text{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #2c4152;
 }
 .logo-float{
     display: inline-block;
@@ -51,6 +55,7 @@ navi{
     align-content: center;
     width: 100%;
     background-color: white;
+    overflow: hidden;
 }
 #searchinput{
     border-style: solid;
@@ -65,6 +70,7 @@ navi{
   background-color: black;
   overflow: hidden;
   min-width: 500px;
+  
 }
 .scaleable:hover{
 transform: scale(1.008);
@@ -73,15 +79,25 @@ z-index: 2;
 }
 .scaleable{
     transition: 1s;
-    width: 100%
+    width: 100%;
     
 }
+
+.show{
+opacity: 1;
+transition: left .4s cubic-bezier(.47,.13,.15,.89);
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;}
 #mobilenav{
-    height: 90px;
+    height: 5em;
     background-color: white;
     display: none;
     min-width: 500px;
 }
+
 @media only screen and (max-width: 1200px)   {
 #navbar{
     display: none;
@@ -89,6 +105,17 @@ z-index: 2;
 #mobilenav{
     display: block;
 }
+.footer{
+    background-color: #2c4152;
+    height: 500px;
+    width: 100vw;
+}
+
+    }
+    @media only screen and (min-width: 1400px)   {  
+        #navbar{
+            margin-left: 20%;
+        }
 
     }
 @media only screen and (min-width: 1920px) {
